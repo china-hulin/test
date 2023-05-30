@@ -10,33 +10,49 @@
         * {
             padding: 0;         /*清除默认内边距*/
             margin: 0;          /*清除默认外边距*/
+            box-sizing: border-box;
         }
 
         .head {
             margin: 0 auto;     /*版心居中显示*/
-            width: 900px;
-            height: 100px;
+            width: 800px;
+            height: 200px;
             background-color: #6ed3d8;
-            /* background-image: url(./imag/冬天.jpeg); */
+            background-image: url(./imag/头部背景图.jpg);
+            background-repeat: repeat-y;
+            background-size: 800px;
         }
         .title {
-            font-size: 5px;
-            font-weight: 700;
-            color: blue;
+            font-size: 22px;
+            color: #525256;
             position: relative;
-            left: 10px;
             top: 10px;
             text-align: center;
         }
         .log {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #ffffff; /*边框设置*/
-            border-radius: 25px;        /*值为宽高的一半时，呈圆形*/
+            width: 100px;
+            height: 100px;
+            border: 3px solid #ffffff; /*边框设置*/
+            border-radius: 50px;        /*值为宽高的一半时，呈圆形*/
             overflow: hidden;
             position: relative;
-            left: 10px;
-            top: 10px;
+            left: 74px;
+            top: 35px;
+        }
+        a {
+            text-decoration: none;  /*去掉下划线*/
+            color: white;
+            background-color: rgba(30, 144, 255, 0.8);
+            border-radius: 6px;
+            font-size: 12px;
+            padding: 3px;
+        }
+        a:hover {
+            color: white;
+            background-color: #0b79af;
+        }
+        .link-list > li {
+            display: inline;
         }
     </style>
     <link rel="stylesheet" href="./">
@@ -45,12 +61,17 @@
     <div id="app">
         <div class="head">
             <!-- 标题 -->
-            <div class="title">欢迎来到陈虎林的博客主页</div>
+            <div class="title">欢迎来到 <strong>陈虎林</strong> 的博客主页</div>
             <!-- 头像 -->
             <img src="./imag/冬天.jpeg" alt="" class="log">
         </div>
         <div class="content">
-            <a href="./边框流动.html">边框流动</a>
+            <div>功能演示</div>
+            <ul class="link-list">
+                <li> <a href="./边框流动.html" target="_blank" class="link list-1">边框流动</a></li>
+                <li> <a href="./3D图片旋转.html" target="_blank" class="link list-2">3D图片旋转</a></li>
+            </ul>
+            <div>功能演示</div>
         </div>
         <div class="bottom">
             这是第三部分，网页底部内容

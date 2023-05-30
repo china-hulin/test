@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .head>img {
+            width: 100px;
+            transform: rotateX(0deg);
+        }
+        .head {
+            width: 108px;
+            height: 192px;
+            box-sizing: content-box;
+            perspective: 20em;
+            border: 10px solid #a66847;
+            animation: rotate 4s ;
+        }
+        /* 给渐变盒子设置动画 */
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img src="./imag/小猫.jpg" alt="小猫.jpg加载失败" title="3D旋转图:小猫">
+    </div>
+</body>
+</html>
