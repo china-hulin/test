@@ -1,0 +1,25 @@
+
+* {
+    box-sizing: border-box;
+}
+.head>img {
+    width: 108px;
+    height: 192px;
+    box-sizing: content-box;
+    perspective: 20em;
+    border: 10px solid #a66847;
+    animation: rotate 5s ;
+    
+    position:relative;
+    left: 40%;
+    top: 40%;
+}
+/* 设置动画 */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
