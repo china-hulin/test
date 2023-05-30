@@ -1,0 +1,47 @@
+* {
+    padding: 0;         /*清除默认内边距*/
+    margin: 0;          /*清除默认外边距*/
+    box-sizing: border-box;
+}
+
+.head {
+    margin: 0 auto;     /*版心居中显示*/
+    width: 800px;
+    height: 200px;
+    background-color: #6ed3d8;
+    background-image: url(./imag/头部背景图.jpg);
+    background-repeat: repeat-y;
+    background-size: 800px;
+}
+.title {
+    font-size: 22px;
+    color: #525256;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+.log {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff; /*边框设置*/
+    border-radius: 50px;        /*值为宽高的一半时，呈圆形*/
+    overflow: hidden;
+    position: relative;
+    left: 74px;
+    top: 35px;
+}
+a {
+    text-decoration: none;  /*去掉下划线*/
+    color: white;
+    background-color: rgba(30, 144, 255, 0.8);
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 3px;
+}
+a:hover {
+    color: white;
+    background-color: #0b79af;
+}
+.link-list > li {
+    display: inline;
+}
